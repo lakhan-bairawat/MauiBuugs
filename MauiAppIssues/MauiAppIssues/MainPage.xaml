@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppIssues.MainPage" NavigationPage.HasNavigationBar="False">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="20">
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a race car number eight" />
+
+            <!--Picker Issue-->
+            <Label
+                Text="Picker Issue"  HorizontalOptions="Start" FontSize="15"
+                Style="{StaticResource  SubHeadline}" TextColor="Red" />
+            <Border VerticalOptions="Start" HorizontalOptions="Fill">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="20" />
+                </Border.StrokeShape>
+                <Grid ColumnDefinitions="*,30" Padding="10,10">
+                    <Label Text="Please Tab Here to Focus the Picker" TextColor="Gray"/>
+                    <Image Grid.Column="1" Source="dropdown" HeightRequest="20" WidthRequest="20"/>                   
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OpenPicker_Tapped"/>
+                    </Grid.GestureRecognizers>
+                </Grid>
+            </Border>
+            <Picker x:Name="picker" Title="Select a monkey" IsVisible="False">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Baboon</x:String>
+                        <x:String>Capuchin Monkey</x:String>
+                        <x:String>Blue Monkey</x:String>
+                        <x:String>Squirrel Monkey</x:String>
+                        <x:String>Golden Lion Tamarin</x:String>
+                        <x:String>Howler Monkey</x:String>
+                        <x:String>Japanese Macaque</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+ 
+            </Picker>
+            
+
+  <!--Alerternative Icons Issue-->
+            <Label
+    Text="please Click to below button for Check alternative app icon issue"  HorizontalOptions="Fill" FontSize="15"
+    Style="{StaticResource  SubHeadline}" TextColor="Red"/>
+            
+            <Button
+                Text="Click To Navigate Icon Issue PAGE"                 
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

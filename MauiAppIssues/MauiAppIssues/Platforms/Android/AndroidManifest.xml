@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.mauiappissues.app">
+	<application android:allowBackup="true" android:icon="@mipmap/appicon" android:supportsRtl="true">
+		<!--Below Code supported by .net 7 and working fine but .net not supported below code-->
+		<!--<activity-alias android:label="demo" android:icon="@mipmap/demo" android:name="com.mauiappissues.app.demo" android:targetActivity="com.mauiappissues.app.SplashScreen" android:enabled="false" android:exported="true" RegisterAlternateBundleIcon="True" >
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity-alias>		
+		<activity-alias android:label="Fitness" android:icon="@mipmap/fitness" android:name="com.mauiappissues.app.revolutionfitness" android:targetActivity="com.mauiappissues.app.SplashScreen" android:enabled="false" android:exported="true"  RegisterAlternateBundleIcon="True">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity-alias>
+		<activity-alias android:label="Design" android:icon="@mipmap/design" android:name="com.mauiappissues.app.bodydesign" android:targetActivity="com.mauiappissues.app.SplashScreen" android:enabled="false" android:exported="true"  RegisterAlternateBundleIcon="True">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity-alias>
+		<activity-alias android:label="Gym" android:icon="@mipmap/gym" android:name="com.mauiappissues.app.clubplannergym" android:targetActivity="com.mauiappissues.app.SplashScreen" android:enabled="false" android:exported="true"  RegisterAlternateBundleIcon="True">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity-alias>
+		<activity-alias android:label="My" android:icon="@mipmap/icon" android:name="com.mauiappissues.app.icon" android:targetActivity="com.mauiappissues.app.SplashScreen" android:enabled="false" android:exported="true"  RegisterAlternateBundleIcon="True">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity-alias>-->
+	</application>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-sdk />
+</manifest>
